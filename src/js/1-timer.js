@@ -25,7 +25,7 @@ flatpickr('#datetime-picker', {
     if (curDate >= selected[0]) {
       iziToast.show({
         position: 'topRight',
-        iconUrl: './img/icon-x.png',
+        iconUrl: '../img/icon-x.png',
         imageWidth: '24px',
         message: 'Please choose a date in the future',
         messageColor: '#FFFFFF',
