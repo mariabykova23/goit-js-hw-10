@@ -1,6 +1,6 @@
 'use strict';
 
-import icon from '../img/bi_x-octagon-2.svg';
+import icon from '../img/x-icon.svg';
 
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';

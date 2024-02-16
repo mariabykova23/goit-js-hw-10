@@ -30,11 +30,15 @@ fieldset {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  gap:48px;
+  gap: 48px;
   padding-top: 8px;
   padding-left: 0;
   padding-right: 0;
-  
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+fieldset:hover {
+  border: 1px solid #000000;
 }
 
 form {
@@ -43,42 +47,65 @@ form {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 24px;
-  font-family: 'Montserrat';
-  font-size: 16px;
-  line-height: 1.5;
-  color:#2E2F42;
+  color: #2e2f42;
   max-width: 360px;
+  font-family: 'Montserrat';
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 button {
   width: 360px;
   border-radius: 8px;
-  border:none;
+  border: none;
   height: 40px;
-  background-color: #4E75FF;
-  color:#FFFFFF;
+  background-color: #4e75ff;
+  color: #ffffff;
+  font-family: 'Montserrat';
+  line-height: 1.5;
   font-weight: 500;
   font-size: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover {
+  background-color: #6c8cff;
 }
 
 .delay-ms {
   display: flex;
   flex-direction: column;
   width: 360px;
-  height: 72px;
+  height: 70px;
 }
 
+#delay-ms-input {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
 
-fieldset > legend{
-  margin-left:20px;
+#delay-ms-input:hover {
+  border: 1px solid #000000;
+}
+
+#delay-ms-input:active {
+  border: 1px solid #4e75ff;
+}
+
+fieldset > legend {
+  margin-left: 20px;
+}
+
+fieldset > label {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  gap: 8px;
 }
 
-#delay-ms-input{
+#delay-ms-input {
   margin-top: 8px;
   height: 40px;
   border-radius: 8px;
@@ -86,19 +113,22 @@ fieldset > legend{
   border: 1px solid #808080;
 }
 
-input[type="radio"] {
+input[type='radio'] {
   width: 18px;
   height: 18px;
   margin-top: 0px;
   background-color: transparent;
-}
-
-
-input[type="radio"]:checked {
-  border: 1px solid #4E75FF;
-  background-color: #4E75FF;
   outline: none;
 }
 
-
-
+input[type='radio']:checked::before {
+  content: '';
+  display: block;
+  position: absolute;
+  transform: translate(-6px, -6px);
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  background-image: url('../img/checked.png');
+  background-size: cover;
+}
