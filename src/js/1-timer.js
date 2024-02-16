@@ -2,6 +2,7 @@
 
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+import icon from '../img/bi_x-octagon-2.svg';
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
@@ -25,7 +26,7 @@ flatpickr('#datetime-picker', {
     if (curDate >= selected[0]) {
       iziToast.show({
         position: 'topRight',
-        iconUrl: '../img/bi_x-octagon-2.svg',
+        iconUrl:icon,
         imageWidth: '24px',
         message: 'Please choose a date in the future',
         messageColor: '#FFFFFF',
