@@ -1,0 +1,43 @@
+.go-back-link {
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-bottom: 40px;
+  display: inline-block;
+  cursor: pointer;
+  color: blueviolet;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px;
+  font-weight: 500;
+  font-size: large;
+}
+
+.iziToast > .iziToast-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+
+fieldset {
+  width: 200px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+button {
+  width: 230px;
+}
+
+.delay-ms {
+  display: flex;
+  flex-direction: column;
+}

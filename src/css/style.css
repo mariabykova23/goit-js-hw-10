@@ -1,0 +1,19 @@
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  body {
+    font-weight: 500;
+    font-size: large;
+  }
+  
+  a {
+    color: blueviolet;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
