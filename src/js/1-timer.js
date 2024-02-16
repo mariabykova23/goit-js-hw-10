@@ -35,7 +35,7 @@ flatpickr('#datetime-picker', {
         messageSize: '24px',
         messageLineHeight: '1.6',
         backgroundColor: '#EF4040',
-        timeout: 5000,
+        timeout: 115000,
         displayMode: 2,
         close: false,
         closeOnEscape: true,
