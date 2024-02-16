@@ -1,8 +1,10 @@
 'use strict';
 
+import icon from '../img/bi_x-octagon-2.svg';
+
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
-import icon from '../img/bi_x-octagon-2.svg';
+
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
